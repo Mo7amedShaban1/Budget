@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Budget</title>
+    </head>
+    <body>
+
+        <div class="header">
+            <div class="budget">
+                <div class="title-budget">
+                    Available budget in month
+                </div>
+                <div class="total-budget">
+                    + 2,314.65
+                </div>
+                <div class="incomes">
+                    <p>incomes</p>
+                    <span>+ 4,300.00</span>
+                </div>
+                <div class="expenses">
+                    <p>expenses</p>
+                    <span>- 4,300.00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="add">
+            <div class="container">
+                <select class="add_type">
+                    <option value="inc" selected="">+</option>
+                    <option value="exp">-</option>
+                </select>
+                <input type="text" class="add_description" placeholder="Add description">
+                <input type="number" class="add_value" placeholder="Value">
+                <button class="add_btn"><i class="ion-ios-checkmark-outline"></i></button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="box container_incomes pt-4">
+                        <h3 class="text-uppercase text-center">incomes</h3>
+                        <div class="products">
+                            <div class="product d-flex justify-content-between align-items-center">
+                                <p class="m-0">Description</p>
+                                <div>
+                                    <span class="value_item">+ 200,00</span>
+                                    <button class="remove_item"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                            <div class="product d-flex justify-content-between align-items-center">
+                                <p class="m-0">Description</p>
+                                <div>
+                                    <span class="value_item">+ 200,00</span>
+                                    <button class="remove_item"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="box container_expenses pt-4">
+                        <h3 class="text-uppercase text-center">expenses</h3>
+                        <div class="products">
+                            <div class="product d-flex justify-content-between align-items-center">
+                                <p class="m-0">Description</p>
+                                <div>
+                                    <span class="value_item">+ 200,00</span>
+                                    <button class="remove_item"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                            <div class="product d-flex justify-content-between align-items-center">
+                                <p class="m-0">Description</p>
+                                <div>
+                                    <span class="value_item">+ 200,00</span>
+                                    <button class="remove_item"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
