@@ -94,6 +94,8 @@ body{
     background:none;
     outline: none;
     border:none;
+    position: relative;
+    cursor: pointer;
 }
 
 .box .value_item{
@@ -145,3 +147,12 @@ body{
 }
 
 
+.not_valid{
+    border: 1px solid #ff5049!important;
+}
+
+
+.products{
+    background:#ddd;
+    height:50px;
+}
